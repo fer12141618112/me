@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #d8b7ff;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        img {
+            margin: 15px;
+            width: 300px;
+        }
+
+        .gif {
+            width: 1230px;
+        }
+
+        .btn {
+            width: 217px;
+        }
+
+        .info-banner-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 60px;
+        }
+
+        .info-section {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .banner-vertical {
+            width: 186px;
+        }
+
+        .banner-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px 0;
+            width: 300px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto 40px auto;
+            width: 92%;
+            height: 450px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="gif dos.gif"
+        onmouseover="this.src='imagen estatica.jpg'"
+        onmouseout="this.src='gif dos.gif'"
+        onclick="this.src='imagen estatica.jpg'" style="width:1230px;">
+    </div>
+
+    <a href="reforestacion.html"><button><img src="reforestacion.jpg" class="btn"></button></a>
+    <a href="limpieza institucional.html"><button><img src="limpieza institucional.jpg" class="btn"></button></a>
+    <a href="limpieza externa.html"><button><img src="limpieza externa.jpg" class="btn"></button></a>
+    <a href="flora y fauna.html"><button><img src="flora y fauna.jpg" class="btn"></button></a>
+    <a href="reciclaje.html"><button><img src="reciclaje.jpg" class="btn"></button></a>
+
+    <iframe src="reciclaje.jpg"></iframe>
+
+    <div class="info-banner-container">
+        <div class="info-section">
+            <h2>¿Qué la reforestación?</h2>
+            <p>La reforestación educativa es una actividad que combina la acción práctica de plantar árboles con un proceso de aprendizaje profundo sobre el cuidado del medio ambiente. Cuando los estudiantes participan en la reforestación, no solo colocan árboles en un espacio, sino que también reciben conocimientos sobre cómo los árboles ayudan a mejorar la calidad del aire al producir oxígeno, conservar el suelo evitando la erosión, y crear un hábitat para muchas especies animales y vegetales. Además, aprenden sobre el impacto positivo que tiene la reforestación para combatir el cambio climático, al absorber dióxido de carbono.</p>
+            <h3>Imagen representativa</h3>
+            <img src="imagen de reforestacion.jpg">
+        </div>
+
+        <div class="banner-vertical">
+            <img src="banner.jpg" alt="Banner Vertical">
+        </div>
+    </div>
+</body>
+</html>

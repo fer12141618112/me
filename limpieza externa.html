@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #d8b7ff;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        img {
+            margin: 15px;
+            width: 300px;
+        }
+
+        .gif {
+            width: 1230px;
+        }
+
+        .btn {
+            width: 217px;
+        }
+
+        .info-banner-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 60px;
+        }
+
+        .info-section {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .banner-vertical {
+            width: 196px;
+        }
+
+        .banner-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px 0;
+            width: 300px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto 40px auto;
+            width: 92%;
+            height: 450px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="gif dos.gif"
+        onmouseover="this.src='imagen estatica.jpg'"
+        onmouseout="this.src='gif dos.gif'"
+        onclick="this.src='imagen estatica.jpg'" style="width:1230px;">
+    </div>
+
+    <a href="reforestacion.html"><button><img src="reforestacion.jpg" class="btn"></button></a>
+    <a href="limpieza institucional.html"><button><img src="limpieza institucional.jpg" class="btn"></button></a>
+    <a href="limpieza externa.html"><button><img src="limpieza externa.jpg" class="btn"></button></a>
+    <a href="flora y fauna.html"><button><img src="flora y fauna.jpg" class="btn"></button></a>
+    <a href="reciclaje.html"><button><img src="reciclaje.jpg" class="btn"></button></a>
+
+    
+
+    <div class="info-banner-container">
+        <div class="info-section">
+            <h2>¿Qué la limpieza externa?</h2>
+            <p>Realizar actividades de limpieza fuera de la escuela, como recoger basura en las calles, parques o áreas cercanas al plantel, es una forma concreta de conectar a los estudiantes con la comunidad y el entorno urbano. Esta acción les permite comprender que el cuidado del medio ambiente es una responsabilidad compartida que va más allá del aula y que todos deben participar para mantener limpio y saludable el espacio público. Además, al recoger basura, los alumnos observan el impacto que tiene la contaminación en la naturaleza y en la calidad de vida de las personas, lo que les genera un sentido de compromiso social y ambiental. Estas acciones suelen ir acompañadas de charlas o campañas de sensibilización sobre la reducción de residuos, la importancia del reciclaje y el consumo responsable, incentivando cambios en hábitos y conductas cotidianas.</p>
+            <h3>Imagen representativa</h3>
+            <img src="imagen de limpieza externa.jpg">
+        </div>
+
+        <div class="banner-vertical">
+            <img src="banner.jpg" alt="Banner Vertical">
+        </div>
+    </div>
+</body>
+</html>
