@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuidado del Medio Ambiente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffeaea;
+    }header {
+  background-color: #c62828;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff5252;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+nav button {
+  padding: 15px 25px;
+  background-color: #d32f2f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #b71c1c;
+}
+
+main {
+  padding: 30px;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #b71c1c;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img, video, audio {
+  margin: 20px auto;
+  display: block;
+  max-width: 90%;
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Proyecto: Cuidado del Medio Ambiente</h1>
+</header><nav>
+  <button onclick="mostrar('menu')">Menú</button>
+  <button onclick="mostrar('flora_fauna')">Flora y Fauna</button>
+  <button onclick="mostrar('limpieza_externa')">Limpieza Externa</button>
+  <button onclick="mostrar('reforestacion')">Reforestación</button>
+  <button onclick="mostrar('limpieza_interna')">Limpieza Interna</button>
+</nav><main id="contenido">
+  <h2>Bienvenido</h2>
+  <p>Haz clic en los botones para conocer las distintas acciones realizadas para el cuidado del medio ambiente.</p>
+</main><script>
+  function mostrar(seccion) {
+    const contenido = document.getElementById('contenido');
+    if (seccion === 'menu') {
+      contenido.innerHTML = `
+        <h2>Menú Principal</h2>
+        <p>Este sitio está dedicado a mostrar nuestras acciones para cuidar y preservar el medio ambiente.</p>
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      `;
+    } else if (seccion === 'flora_fauna') {
+      contenido.innerHTML = `
+        <h2>Flora y Fauna</h2>
+        <p>Conocer y respetar la vida vegetal y animal es fundamental para mantener el equilibrio ecológico.</p>
+        <img src="imagen1.jpg" alt="Flora y fauna">
+      `;
+    } else if (seccion === 'limpieza_externa') {
+      contenido.innerHTML = `
+        <h2>Limpieza Externa</h2>
+        <p>Realizamos limpieza en áreas comunes y exteriores de la escuela para fomentar el respeto por los espacios verdes.</p>
+        <img src="imagen2.jpg" alt="Limpieza externa">
+      `;
+    } else if (seccion === 'reforestacion') {
+      contenido.innerHTML = `
+        <h2>Reforestación</h2>
+        <p>Plantar árboles ayuda a reducir la contaminación y restaurar los ecosistemas.</p>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta el audio.
+        </audio>
+      `;
+    } else if (seccion === 'limpieza_interna') {
+      contenido.innerHTML = `
+        <h2>Limpieza Interna</h2>
+        <p>El mantenimiento del orden dentro del aula y salones crea un entorno más saludable y armónico.</p>
+        <img src="gif1.gif" alt="Limpieza interna gif">
+      `;
+    }
+  }
+</script></body>
+</html>
